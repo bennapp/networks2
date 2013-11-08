@@ -1,0 +1,8 @@
+2013-11-08 17:08:22.221, remoteIP, Source: 127.0.1.1, SequenceNum: 0, ACKNum: 0, ackF: 1, finF: 0
+
+2013-11-08 17:08:22.233, remoteIP, Source: 127.0.1.1, SequenceNum: 556, ACKNum: 1, ackF: 1, finF: 0
+
+2013-11-08 17:08:22.234, remoteIP, Source: 127.0.1.1, SequenceNum: 1112, ACKNum: 2, ackF: 1, finF: 0
+
+2013-11-08 17:08:22.235, remoteIP, Source: 127.0.1.1, SequenceNum: 1668, ACKNum: 3, ackF: 1, finF: 1
+
