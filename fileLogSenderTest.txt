@@ -1,0 +1,60 @@
+2013-11-09 16:09:54.828, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 0, ACKNum: 0, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.841, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 556, ACKNum: 1, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.842, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 1112, ACKNum: 2, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.843, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 1668, ACKNum: 3, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.844, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 2224, ACKNum: 4, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.844, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 2780, ACKNum: 5, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.845, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 3336, ACKNum: 6, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.845, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 3892, ACKNum: 7, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.846, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 4448, ACKNum: 8, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.846, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 5004, ACKNum: 9, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.847, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 556, ACKNum: 1, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.847, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 1112, ACKNum: 2, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.848, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 1668, ACKNum: 3, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.848, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 2224, ACKNum: 4, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.848, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 2780, ACKNum: 5, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.849, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 3336, ACKNum: 6, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.849, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 3892, ACKNum: 7, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.85, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 4448, ACKNum: 8, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.85, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 5004, ACKNum: 9, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.85, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 5560, ACKNum: 10, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.851, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 1112, ACKNum: 2, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.851, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 1668, ACKNum: 3, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.852, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 2224, ACKNum: 4, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.852, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 2780, ACKNum: 5, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.852, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 3336, ACKNum: 6, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.853, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 3892, ACKNum: 7, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.853, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 4448, ACKNum: 8, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.854, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 5004, ACKNum: 9, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.854, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 5560, ACKNum: 10, ackF: 1, finF: 0
+
+2013-11-09 16:09:54.854, localhost/127.0.0.1, Source: 127.0.1.1, SequenceNum: 6116, ACKNum: 11, ackF: 1, finF: 1
+

@@ -9,3 +9,29 @@ On a cruise ship, everything is taken care of for you. No time at all has to be 
 When you get back to your stateroom, it has been cleaned and the bed has been made. Today there appeared, with no explanation, a big platter of fruit, which will make a great snack while working.
 
 Wifi is present everywhere, but very expensive, ranging from twenty to seventy cents per minute, depending on which package you choose. This actually suits work very well because it's reasonable enough to commit code, look something up occasionally, post blog posts, and stay on top of emails, but it's too expensive to check Facebook compulsively or to get caught up in the dreaded Reddit -> Hacker News -> Reddit cycle.
+
+If you get a stateroom with a window, like the one we were upgraded to for free this time, it's quite comfortable to work from your room. If you need a snack, you can order room service, which is either free or carries a flat rate of $2 per order. Again, no cooking or cleaning up.
+
+If you prefer to work outside your room, which I do if I don't have a window, there are always plenty of decent places to work around the cruise ship. Good options are the library, cardroom, or one of the nightclubs that are empty but unlocked during the day. On the last cruise I went on we found a perfect lounge in which a string quartet played for four hours each day. We were always the only people in attendance, which made our makeshift office feel particularly decadent.
+
+Despite working for most of the day, it's nice to have high quality breaks. Meals on cruises can be quite long, and they seat you with random people. Most of the random people are probably not like the people you normally associate with, which can be a mixed bag, but allows for some shifts in perspective. If you go with a friend, you can debrief with him on your workday. Brian has been working on building a video game, so we've been talking about some ideas for that.
+
+And, of course, you get to visit a bunch of new places. To really understand a city you may have to spend weeks or months there, but that doesn't mean that a day or two is completely useless. I use the port stops to visit specific places, like the Fundacio Miro in Barcelona or the Hassan Mosque in Casablanca, or to just wander around and get a sneak preview of a new place. This is especially valuable for places like the Azores or Canary Islands, where you probably wouldn't otherwise find yourself.
+
+If you're visiting a port that doesn't have anything you're excited about, you can also just find an internet cafe and handle phone calls and downloads that you weren't able to do on the ship. I may do this in a few days in Tenerife, since last time I was there I couldn't find anything particularly interesting to do.
+
+When you visit these ports, the process is incredibly efficient. The ship takes care of all of the immigration stuff behind the scenes, so you get off the ship without having to go through customs. You're generally very close to downtown, versus airports which require trains or taxis, so you can immediately go do what you want to do. And unlike flights, you can get to the ship just a few minutes before the scheduled departure time and get on.
+
+After returning to the ship, it's easy to immediately get back to work because there's no unpacking or settling in to be done. You just pick up your computer, head to your favorite workspace, and get rolling.
+
+My favorite days, though, are days like today, when we're in transit and not actually visiting a port. For this reason, I always choose the transatlantic cruises, which have five to seven days in the middle with no stops. The amount of work I'm able to do during those days, completely free of distraction, is incredible. Doing the work feels easy because there's no friction or drain on willpower avoiding distraction. Frankly, if you're not into bingo and ballroom dancing, you may find there's not much for you to do on the ship other than work or read.
+
+For certain types of work, like writing or coding, a cruise ship is a near-ideal environment. However, if you need to make a lot of phone calls or be connected to the internet all the time, it wouldn't make any sense to do. There's also a benefit to being around other people in your industry, and that generally isn't going to happen on a cruise ship, although I don't find it to be a problem for short term trips.
+
+Transatlantic cruises are the best ones to choose for a couple reasons. First, as I mentioned, they have the highest ratio of sea day to port days, which gives you plenty of long blocks of time in which to work. Second, they're among the cheapest cruises available. If cruises were expensive, the added productivity boost may not be worth it, but at $30-50 per day, the cost is almost negligible.
+
+I built a tool called Cruise Sheet which helps you find the cheapest cruises. If you book through it I get a small commission, which funds future work making it even better. I also have a bunch of tricks and tips to get cruises extremely cheaply (my record is $10/day), which I will share if there is interest.
+
+###
+
+Photo is me in the Library of the Costa Luminosa.... right now!

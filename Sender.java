@@ -22,11 +22,12 @@ public class Sender /*implements Runnable*/{
 			
 			String remoteIP = args[0];
 			int remotePort = Integer.parseInt(args[1]);
-			int ackPortNumber = 7000;
+			int ackPortNumber = 9999;
 			String fileName = "file.txt";
-			int windowSize = 1;
+			int windowSize = 10;
+			String logFileName = "logfileSender.txt";
 
-		tCPSender = new TCPSender(remoteIP, remotePort, ackPortNumber, fileName, windowSize);
+		tCPSender = new TCPSender(remoteIP, remotePort, ackPortNumber, fileName, windowSize, logFileName);
 		tCPSender.dataRecv();
 
 		} catch(Exception e){

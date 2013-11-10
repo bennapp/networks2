@@ -19,11 +19,11 @@ public class Receiver{
 			//fileLog = args[4];
 			//check if ports are valid
 			
-			fileRead = "readFileTest.txt";
-			fileLog = "fileLogTest.txt";
+			fileRead = "readFile.txt";
+			fileLog = "fileLogReceiver.txt";
 			listeningPort = Integer.parseInt(args[0]);
 			remoteIP = "localhost";
-			remotePort = 7000;
+			remotePort = 9999;
 			
 			TCPReceiver tCPR = new TCPReceiver(fileRead, listeningPort, remoteIP, remotePort, fileLog);
 
