@@ -1,0 +1,49 @@
+Simple TCP-like transport-layer protocol
+
+Using java 6 I have implemented a one way TCP like protocol capable of sending and receiving files under 2GB using the actual link layer protocol UDP. Within the UDP datagram packet's data segment contains a TCP like header and a portion of the file's data. The structure of the TCP like header is similar to TCP and is as follows:
+
+		TCP like Header:
+		|--------------------------------|
+		|   sourcePort  |    destPort    | 2 bytes, 2 bytes,
+		|--------------------------------|
+		|           sequenceNum          | 4 bytes,
+		|--------------------------------|
+		|             AckNum             | 4 bytes,
+		|--------------------------------|
+		|Ack|Fin| winSiz| chkSum| dataL  | 1 byte, 1 byte, 2 bytes, 2 bytes, 2 bytes
+		|--------------------------------|
+										   = 20 bytes total
+
+The TCP like protocol is split into a Sender, to send the file as packets/segments, and a Receiver to receive packets and send Acknowledgement responses to the Sender. The Sender begins by parsing the file and creating an array of byte[] where each individual byte[] will be sent as a packet. The Sender then threads and begins listening for Acknowledgement response, ACK, due to the Receiver recieving specific packets. The Sender will send all of the packets within the specified window size which have not yet received acks for. The sender will do this whenever a timer has timed out. The Sender records and logs all of the packets it has sent out. It also records the time a specific packet was sent out its initial time. Later, the Sender will use this time to find the round trip time for a pacekt, RTT, once the Sender receives an ACK for that packet. Once an Ack is received for the lowest packet in the window, the window will increase. Additionally, the timer will be adjusted as follows:
+
+		timer = 0.25 * timer + 0.75 * RTT(prevAck);
+
+Once the window's base has surpassed all of the packets to be sent, thus all of the acks have been received the Sender terminates and reports the average RTT, the total bytes sent, the total bytes received at the sender, the total packets, or segments sent, and the total segments retransmitted.
+
+Meanwhile, the Receiver will receive potentially out of order packets from the sender. If the packets are not corrupted, checked via the checkSum operation of XOR all of the bits of the packet, the receiver will buffer the packet to be sorted and later outputted to a file. The Receiver logs all packets received corrupted, or not. Once the Receiver, has received all the packets, it write them in order to the specified file.
+
+To start Run:
+
+		chmod +x newudpl
+		./newudpl -o localhost/4119 -i localhost/9999 -p5000:6000 -L 95 -B 95 -O 95
+		
+		make
+		java Receiver <FileReceived> <listeningPort> <remoteIP> <remotePort> <logReceiverFileName> <options>
+		java Receiver file.txt 4119 localhost 9999 logRecFile.txt
+		
+		java Sender <FileSent> <remoteIP> <remotePort> <ackPort> <windowSize> <logReceiverFileName> <options>
+		java Sender file.txt localhost 5000 9999 10 logSendFile.txt
+
+Extras:
+To test my extras run with the extra parameter correspoding to the test.
+
+	ie. for windowSize and outOfOrder
+	% Sender file.txt 128.59.15.38 20000 20001 1152 logfile.txt windowSize
+	% Receiver file.txt 20000 128.59.15.37 20001 logfile.txt outOfOrder
+
+
+"windowSize" - Window size greater than 1 is supported. Max window size supported is 32,767, due to windowSize being stored as a short in the TCP header. In the test, the windowSize and the incremented base will be outputted by the Sender as it sends packets. Also, when an ack is received this will be outputted in order to see when the base should increment. Because of concurrent threads sometimes base will update and one segment will be sent before the program terminates. This is not an issue but the last output before the program wraps up with stats may be confusing.
+
+"outOfOrder" - Buffering out of order packets is supported. To demonstrate run Receiver with the outOfOder parameter and the acks as they are received will be outputted.
+
+Total bytes received by the receiver is displayed at the end of a file transfer with no special options

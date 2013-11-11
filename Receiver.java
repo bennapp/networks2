@@ -2,37 +2,30 @@ import java.io.*;
 import java.net.*;
 
 public class Receiver{
-
 	public static void main(String[] args){
-		String fileRead = "";
-		int listeningPort = 0;
-		String remoteIP = "";
-		int remotePort = 0;
-		String fileLog = "";
-
-
 		try{
-			//fileRead = args[0];
-			//listeningPort = Integer.parseInt(args[1]);
-			//remoteIP = args[2];
-			//remotePort = Integer.parseInt(args[3]);
-			//fileLog = args[4];
-			//check if ports are valid
+			if(!(args.length == 5) && !(args.length == 6)){
+				System.out.println(args.length);
+				System.err.println("Invalid args length");
+				System.err.println("Try: java Receiver file.txt 4119 localhost 9999 logRecFile.txt");
+				System.exit(0);
+			}
 			
-			fileRead = "readFile.txt";
-			fileLog = "fileLogReceiver.txt";
-			listeningPort = Integer.parseInt(args[0]);
-			remoteIP = "localhost";
-			remotePort = 9999;
-			
-			TCPReceiver tCPR = new TCPReceiver(fileRead, listeningPort, remoteIP, remotePort, fileLog);
+			String fileRead = args[0];
+			int listeningPort = Integer.parseInt(args[1]);
+			String remoteIP = args[2];
+			int remotePort = Integer.parseInt(args[3]);
+			String fileLog = args[4];
+			String options = "";
 
+			if(args.length == 6){
+				options = args[5];
+			}
+			TCPReceiver tCPR = new TCPReceiver(fileRead, listeningPort, remoteIP, remotePort, fileLog, options);
 		} catch (Exception e){
 			System.err.println(e);
 		}
 
 	} 
-//receiver file.txt 20000 128.59.15.37 20001 logfile.txt
-//command line exec with filename, listening_port remote_IP, remote_port,
-//log_filename
+
 }
